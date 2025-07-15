@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaaS - Your Backend</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="logo">BaaS®</div>
+
+    <div class="burger" onclick="toggleMenu()">☰</div>
+
+    <nav class="nav" id="mobileMenu">
+        <a href="#main">Главная</a>
+        <a href="#features">Преимущества</a>
+        <a href="#pricing">Тарифный план</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+
+    <main class="main" id="main">
+        <img src="images/logo.svg" alt="" class="main-logo">
+        <h1>Готовый бэкенд за 24 часа</h1>
+        <p class="subtitle">Для любого мобильного приложения</p>
+        <div class="buttons">
+            <a href="https://youtube.com" class="btn-primary" target="_blank">Смотреть демо-видео</a>
+        </div>
+
+        <section class="features" id="features">
+
+            <div class="feature-card">
+                <div class="feature-content">
+                    <img src="images/logo.svg" alt="" class="main-feature-logo">
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon square"></div>
+                <div class="feature-content">
+                    <h2>Готовые шаблоны</h2>
+                    <p>Бэкенд для доставки, записи, чатов и других моделей внедряется за сутки без кода.</p>
+                </div>
+            </div>
+
+            <div class="feature-card reverse">
+                <div class="feature-icon circle"></div>
+                <div class="feature-content">
+                    <h2>Поддержка бизнесу</h2>
+                    <p>Поможем интегрировать, предоставляем чаты и поддержку в Telegram, решаем вопросы клиентов быстро.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon triangle"></div>
+                <div class="feature-content">
+                    <h2>Безопасность и рост</h2>
+                    <p>Ваши данные защищены, высокая стабильность и быстрый масштаб в разы при росте продаж.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pricing-section" id="pricing">
+            <h2 class="pricing-title">Цены и подписки</h2>
+            <p class="pricing-subtitle">Все планы — по подписке, помесячно.</p>
+
+            <div class="pricing-cards">
+
+                <div class="pricing-card">
+                    <h3>Развитие</h3>
+                    <p class="price">6500₽/мес</p>
+                    <ul>
+                        <li>✓ 3 проекта</li>
+                        <li>✓ до 5000 пользователей</li>
+                        <li>✓ Активные чаты Telegram</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-grey">Оформить</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Бизнес</h3>
+                    <p class="price">10500₽/мес</p>
+                    <ul>
+                        <li>✓ Индивидуальные настройки</li>
+                        <li>✓ Коробочные интеграции</li>
+                        <li>✓ Приоритетная поддержка</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-grey">Оформить</a>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="contact-section" id="contact">
+            <h2 class="contact-title">Начнём прямо сейчас</h2>
+            <p class="contact-subtitle">Свяжитесь с нами, чтобы начать прямо сейчас.</p>
+
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение..." required></textarea>
+                <button type="submit" class="btn btn-black">Отправить заявку</button>
+            </form>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-item">
+                <button class="faq-question">Как быстро можно запустить бэкенд для приложения, сайта или
+                    магазина?</button>
+                <div class="faq-answer">
+                    <p>Запуск возможен в течение 24 часов — подключение максимально простое и автоматизированное.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Правда, что можно всего за день подключить облачный бэкенд?</button>
+                <div class="faq-answer">
+                    <p>Да, даже без опыта программирования вы сможете пройти весь процесс за сутки — подробная
+                        документация и поддержка помогут.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Есть подписка — а разовые платежи возможны?</button>
+                <div class="faq-answer">
+                    <p>Возможны индивидуальные условия. Свяжитесь с нами для обсуждения.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="images/logo.svg" alt="Logo">
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <a href="#main">Главная</a>
+                    <a href="#pricing">Услуги</a>
+                    <a href="#contact">Контакты</a>
+
+                </div>
+
+            </div>
+        </footer>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
